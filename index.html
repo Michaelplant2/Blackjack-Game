@@ -9,12 +9,14 @@
   </head>
   <body>
     <h1>Blackjack</h1>
-    <p id="message-el">Want to play a Round?</p>
+    <p id="message-el">Want to play a Round? Hit Deal</p>
+    <button class="deal-btn" onclick="startGame()">DEAL</button>
     <p id="cards-el">Cards:</p>
     <p id="sum-el">Sum:</p>
-    <button onclick="startGame()">START GAME</button>
-    <button onclick="newCard()">NEW CARD</button>
-    <p id="player-el"></p>
+    <button class="hit-btn" onclick="hit()">HIT</button>
+    <button class="stay-btn" onclick="stay()">STAY</button>
+    <p id="odds-el"></p>
+    <button class="reset" onclick="reset()">RESET GAME</button>
     <script src="script.js" type="text/javascript" defer></script>
   </body>
 </html>
