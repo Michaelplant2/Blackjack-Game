@@ -20,7 +20,7 @@ h1 {
     -webkit-text-fill-color: transparent; 
 }
 
-.deal-btn {
+.start-btn {
     padding: 5px 20px;
     font-size: 30px;
     font-weight: 600;
@@ -42,6 +42,17 @@ h1 {
 }
 
 .stay-btn {
+    padding: 5px 20px;
+    margin-left: 15px;
+    font-size: 30px;
+    font-weight: 600;
+    color: green;
+    background-color: goldenrod;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.deal-btn {
     padding: 5px 20px;
     margin-left: 15px;
     font-size: 30px;

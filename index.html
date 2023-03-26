@@ -9,14 +9,16 @@
   </head>
   <body>
     <h1>Blackjack</h1>
-    <p id="message-el">Want to play a Round? Hit Deal</p>
-    <button class="deal-btn" onclick="startGame()">DEAL</button>
+    <button class="start-btn" onclick="startGame()">DRAW CARDS</button>
+    <p id="message-el">Want to play a Round? Hit DRAW CARDS</p>
     <p id="cards-el">Cards:</p>
     <p id="sum-el">Sum:</p>
     <button class="hit-btn" onclick="hit()">HIT</button>
     <button class="stay-btn" onclick="stay()">STAY</button>
     <p id="odds-el"></p>
     <button class="reset" onclick="reset()">RESET GAME</button>
+    <p>Try and get 21 or anything close. Any number under 15 is a loss.</p>
+    <p>*Ace automatically equals 11*</p>
     <script src="script.js" type="text/javascript" defer></script>
   </body>
 </html>
