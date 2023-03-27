@@ -1,6 +1,4 @@
-let card = [];
-let cards = [2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 11];
-let deckOfCards = [...cards, ...cards, ...cards, ...cards];
+let cards = [];
 let sum = 0;
 let win = 0;
 let lose = 0;
@@ -15,7 +13,14 @@ let oddsEl = document.getElementById("odds-el");
 oddsEl.textContent = "WIN: " + win + " / " + "LOSS: " + lose;
 
 function getRandomCard() {
-    Math.floor(Math.random() * deckOfCards.length);
+    let randomNumber = Math.floor(Math.random() * 13) + 1;
+    if (randomNumber > 10) {
+        return 10;
+    } else if (randomNumber === 1) {
+        return 11;
+    } else {
+        return randomNumber;
+    }
 }
 
 function startGame() {
@@ -23,7 +28,7 @@ function startGame() {
     hasBlackJack = false;
     let firstCard = getRandomCard();
     let secondCard= getRandomCard();
-    card = [firstCard, secondCard];
+    cards = [firstCard, secondCard];
     sum = firstCard + secondCard;
     renderGame();
     if (sum === 21) {
@@ -69,6 +74,8 @@ function hit() {
 function stay() {
     if (sum <= 21 && sum >= 15) {
         win ++;
+    } else {
+        lose++;
     }
     oddsEl.textContent = "WIN: " + win + " / " + "LOSS: " + lose;
 }
