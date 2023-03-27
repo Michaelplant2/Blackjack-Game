@@ -93,7 +93,7 @@ h1 {
 }
 
 .important {
-    margin: 5px 0;
+    margin: 5px 0 10px 0;
     font-size: 20px;
     font-weight: 200;
     color: darkred;
