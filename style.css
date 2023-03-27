@@ -8,7 +8,7 @@ body {
     height: 100%;
     width: 100%;
     margin: 0;
-    font-family: fantasy;
+    font-family: 'Noto Sans', sans-serif;
     letter-spacing: 1px;
     text-align: center;
     background-image: url("img/table.png");
@@ -17,7 +17,8 @@ body {
 }
 
 h1 {
-    font-size: 65px;
+    font-size: 55px;
+    font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 6px;
     background-image: linear-gradient(to right, red, black);
