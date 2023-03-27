@@ -12,7 +12,6 @@ body {
     letter-spacing: 1px;
     text-align: center;
     background-image: url("img/table.png");
-    background-repeat: no-repeat;
     background-size: cover;
 }
 
